@@ -4,6 +4,7 @@
         (mouseenter) ="ombrain()" 
         (mouseleave) ="ombraout()" 
         [ngClass]="{'show': ombra}" 
+        (click) = "addNewItem()"
         > 
     
     <img class="card-img-top" [src]="pg.prevIMG_path" alt="{{pg.name}}">

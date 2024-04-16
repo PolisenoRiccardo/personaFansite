@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { pgCard } from '../pgbox/pg.model';
 
 @Component({
@@ -7,6 +7,7 @@ import { pgCard } from '../pgbox/pg.model';
   styleUrls: ['./pg.component.css']
 })
 export class PgComponent {
+  @Output() newItemEvent = new EventEmitter<pgCard>();
   @Input() pg!: pgCard;
   ombra: boolean = false; 
 
@@ -16,6 +17,10 @@ export class PgComponent {
 
   ombraout() {
     this.ombra = false;
+  }
+
+  addNewItem() {
+    this.newItemEvent.emit(this.pg);
   }
 
 }

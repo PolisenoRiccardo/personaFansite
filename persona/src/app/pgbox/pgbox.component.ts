@@ -8,6 +8,11 @@ import { pgCard } from './pg.model';
 })
 export class PGboxComponent {
   characters: pgCard[];
+
+  addItem(newItem: pgCard) {
+    console.log(newItem);
+  }
+
   constructor() {
     this.characters = [
       new pgCard('Yukari Takeba', 'assets/images/yukari.png', 'assets/images/yukari.png', 'Un grande personaggio'),

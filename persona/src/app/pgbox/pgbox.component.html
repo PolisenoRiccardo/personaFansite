@@ -1,5 +1,5 @@
 <div class="m-5 d-flex flex-wrap container-fluid col-5"> 
     <div *ngFor="let pg of characters">   
-        <app-pg [pg]="pg"></app-pg>
+        <app-pg [pg]="pg" (newItemEvent)="addItem($event)"></app-pg>
     </div>    
 </div>
