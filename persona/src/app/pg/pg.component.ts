@@ -8,14 +8,14 @@ import { pgCard } from '../pgbox/pg.model';
 })
 export class PgComponent {
   @Input() pg!: pgCard;
-  ombra: string = ''; 
+  ombra: boolean = false; 
 
   ombrain() {
-    this.ombra = 'shadow';
+    this.ombra = true;
   }
 
   ombraout() {
-    this.ombra = '';
+    this.ombra = false;
   }
 
 }

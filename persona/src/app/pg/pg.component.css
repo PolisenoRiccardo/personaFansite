@@ -1,0 +1,8 @@
+.fade-in-out {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Ombra iniziale trasparente */
+  }
+  
+  .fade-in-out.show {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombra con opacità */
+  }
