@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { pgCard } from '../pgbox/pg.model';
 
 @Component({
@@ -8,4 +8,14 @@ import { pgCard } from '../pgbox/pg.model';
 })
 export class PgComponent {
   @Input() pg!: pgCard;
+  ombra: string = ''; 
+
+  ombrain() {
+    this.ombra = 'shadow';
+  }
+
+  ombraout() {
+    this.ombra = '';
+  }
+
 }

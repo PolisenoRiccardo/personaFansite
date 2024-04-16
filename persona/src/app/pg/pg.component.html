@@ -1,8 +1,6 @@
-<a > <!-- (mouseenter) ="io('div a') "  (mouseleave) ="mouseLeave('div A')" -->
-    <div class="card m-2 d-inline-block shadow" style="width: 14rem;">
-        <img class="card-img-top" [src]="pg.prevIMG_path" alt="{{pg.name}}">
-        <div class="card-body">
-        <h5 class="card-title">{{pg.name}}</h5>
-        </div>
+<div class="card m-2 d-inline-block {{ombra}}" style="width: 14rem;" (mouseenter) ="ombrain()" (mouseleave) ="ombraout()">
+    <img class="card-img-top" [src]="pg.prevIMG_path" alt="{{pg.name}}">
+    <div class="card-body">
+    <h5 class="card-title">{{pg.name}}</h5>
     </div>
-</a>
+</div>
