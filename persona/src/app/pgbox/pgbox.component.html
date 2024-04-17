@@ -1,5 +1,12 @@
-<div class="m-5 d-flex flex-wrap container-fluid col-5"> 
-    <div *ngFor="let pg of characters">   
-        <app-pg [pg]="pg" (newItemEvent)="addItem($event)"></app-pg>
-    </div>    
+<div class="row m-5 bg-warning">
+
+    <div class="d-flex flex-wrap col-5 float-left">  
+        <div *ngFor="let pg of characters">   
+            <app-pg [pg]="pg" (newItemEvent)="addItem($event)"></app-pg>
+        </div> 
+    </div>  
+    <div class="col-7 bg-danger">
+        <app-pg-details [character] = 'character'></app-pg-details>
+    </div>
 </div>
+
