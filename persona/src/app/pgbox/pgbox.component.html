@@ -1,13 +1,11 @@
-<div class="row m-5">
-
-    <div class="d-flex flex-wrap col-5 float-left">  
-        <div *ngFor="let pg of characters"> 
-            <div > 
-            <app-pg [pg]="pg" (newItemEvent)="addItem($event)"></app-pg>
+<div class="row m-5 ">
+    <div class="d-flex flex-wrap col-5" >  
+        <div *ngFor="let pg of characters">      
+                <app-pg [pg]="pg" (newItemEvent)="addItem($event)" class="d-flex s-auto"></app-pg> 
         </div> 
-        </div> 
-    </div>  
-    <div class="col-7">
+    </div>
+    
+    <div class="col-6 flex-wrap">
         <app-pg-details [character] = 'character'></app-pg-details>
     </div>
 </div>
