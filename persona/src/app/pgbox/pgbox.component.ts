@@ -8,7 +8,7 @@ import { pgCard } from './pg.model';
 })
 export class PGboxComponent {
   characters: pgCard[];
-  character: pgCard = new pgCard('Futaba', 'assets/images/futaba.png', 'assets/images/futaba.png', 
+  character: pgCard = new pgCard('Futaba Sakura', 'assets/images/futaba.png', 'assets/images/futaba.png', 
   'Davvero una grande');
 
   addItem(newItem: pgCard) {

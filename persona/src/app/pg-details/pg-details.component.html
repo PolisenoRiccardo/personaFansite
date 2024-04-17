@@ -1,15 +1,28 @@
-<div class="m-5 d-flex float-right bg-primary"> 
-    <div class="float-left">
-        <p>funziona? LA ACCENDIAMO?</p>  
-    </div>
-    <div class="float-right d-flex align-items-end bg-secondary">
-        <div class="card">
-            <div class="card-title">
-                <h2 style="font-size: 1.5rem;">Futaba Sakura</h2>
-            </div>
-            <div class="card-img">
-                <img src="{{character.fullIMG_path}}" alt="{{character.name}}" style="width: 12rem;" >
-            </div>
+<div class="container shadow-lg rounded-4 p-5">
+    <h1>{{character.name}}</h1>
+    <div class="d-flex float-right">    
+        <div class="float-left">
+            <p class="fs-5">{{character.description}}</p>  
+        </div>
+        <div class="d-flex ms-auto">
+            <div class="card" style="width: 25rem;">
+                <div class="card-title m-1 text-center">
+                    <h2 style="font-size: 2rem;">{{character.name}}</h2>
+                </div>
+                <div class="card-img border">
+                    <img src="{{character.fullIMG_path}}" alt="{{character.name}}"  class="img-fluid">
+                </div>
+                <div class="card-body">
+                    <span class="h5">Gioco</span><br>
+                    <span>Persona 5</span> <!-- Crea proprietà -->
+                    <hr>
+                    <span class="h5">Data di nascita</span><br>
+                    <span>October 19th, 1992</span> <!-- Crea proprietà -->
+                    <hr>
+                    <span class="h5">Altezza</span><br>
+                    <span>159 cm</span>
+                </div>
+            </div> 
         </div> 
-    </div> 
+    </div>
 </div>
