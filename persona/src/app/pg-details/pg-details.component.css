@@ -1,0 +1,14 @@
+/* CSS personalizzato per forzare le proporzioni */
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Imposta l'altezza relativa dell'immagine */
+  }
+  .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assicura che l'immagine copra l'intero contenitore mantenendo le proporzioni */
+  }
